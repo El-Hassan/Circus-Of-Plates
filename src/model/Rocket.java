@@ -1,0 +1,16 @@
+package model;
+
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+public class Rocket extends Shape{
+	
+	public Rocket() throws IOException{ 
+		this.image=ImageIO.read(new File("../circusOfplates2/src/images/Burn-icon.png"));
+	this.type="rocket";
+	}
+}
+ 
